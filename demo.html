@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>竞品店铺周报 SETable Inside</title>
+	
+	<script type="text/javascript" src="../jquery.min.js"></script>
+	<script type="text/javascript" src="se_table.js"></script>
+    <link rel="stylesheet" type="text/css" href="se_table.css">
+    <script type="text/javascript">
+    $(document).ready(function(){
+    	
+    	
+
+    	var config={
+	        cell:{
+	            width: 120,
+	            height: 30
+	        },
+	        box:{
+	            width: ($(document).width()-300),
+	            height: 250
+	        },
+	        browser:{
+	        	agent:"Chrome 49.0.2623.112",
+	        	browser:"Chrome",
+	        	plateform:"Windows 7",
+	        	version:"49.0.2623.112"
+	        }
+	    };
+	   
+	    console.log(config);
+
+
+	    se_table('sheets_box',data,config);
+
+
+
+    	//查看竞品
+		$('.search').click(function(){
+			var date = $('#changetime').val();
+			var language = $('#language_select option:selected').val();
+			if(date == ''){
+				date += $("#quick_time").val();
+			}
+			$.ajax({
+				url: 'ReportRaibaruWeeklyAgency/ajaxReportJson'+'/'+date+'/'+language,
+				type: 'post',
+				dataType: 'json',
+				success: function(data){
+					// var table = ompositionTable(data);
+					// $('#raibaru_table').html(table);
+					se_table('sheets_box',data,config);
+				},
+				error: function(XMLHttpRequest, textStatus, errorThrown){
+					console.log(XMLHttpRequest.status);
+					console.log(XMLHttpRequest.responseText);
+					console.log(textStatus);
+    			}
+    		});		
+		});
+
+	
+    })
+    </script>
+    <style type="text/css">
+    #result_box{
+    	width: 94%;
+    	margin: 20px auto;
+    }
+    </style>
+</head>
+<body>
+	<div id="result_box">
+		<div id="sheets_box"></div>
+		<div id="comment_box"></div>
+	</div>
+</body>
+</html>

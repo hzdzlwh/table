@@ -1,0 +1,184 @@
+.SE_TABLE_TAB_DIV {
+  width: 100%;
+  padding: 4px;
+  border-bottom: 1px solid lightgray;
+}
+.SE_TABLE_TAB_DIV span {
+  padding: 5px;
+  margin: 2px 2px 0px 2px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 1px solid lightgray;
+  line-height: 20px;
+}
+.SE_TABLE_TAB_DIV span.SE_TABLE_TAB_SPAN_ACTIVE{
+  background-color: lightgray;
+}
+.SE_TABLE_TAB_DIV span.SE_TABLE_TAB_SPAN_INACTIVE{
+  background-color: white;
+}
+.SE_TABLE_SHEETS_DIV {
+  width: 98%;
+  margin: 20px auto;
+}
+.SE_TABLE_SHEET_DIV {
+  display: none;
+}
+.SE_TABLE_ATOMTABLE_DIV {
+  background-color: #FEFEFE;
+}
+
+.SE_TABLE_LEFT_DIV {
+  background-color:#008DCB; 
+  color:white;
+  float:left; 
+}
+.SE_TABLE_LEFT_DIV_CORNER_TABLE {
+  border:none;
+  border-collapse: collapse;
+}
+.SE_TABLE_LEFT_DIV_CORNER_TABLE tr{
+  border: none;
+  border-collapse: collapse;
+}
+.SE_TABLE_LEFT_DIV_CORNER_TABLE tr th {
+  border:1px solid lightgray;
+  border-collapse: collapse;
+}
+
+.SE_TABLE_LEFT_DIV_INNER {
+  overflow-y:hidden;
+}
+.SE_TABLE_LEFT_DIV_INNER table.SE_TABLE_LEFT_DIV_TABLE {
+  width:100%; 
+  margin-bottom:5px;
+  border-collapse: collapse;
+}
+.SE_TABLE_LEFT_DIV_INNER table.SE_TABLE_LEFT_DIV_TABLE th {
+  text-align:center;
+}
+
+.SE_TABLE_RIGHT_DIV {
+  height:auto; 
+  float:left; 
+  overflow: auto;
+  background-color: white;
+}
+.SE_TABLE_RIGHT_DIV_HEADER {
+  overflow-x:hidden; 
+  color:white;
+  background-color:#008DCB;
+  position:relative;
+}
+.SE_TABLE_RIGHT_DIV_HEADER_INNER {
+}
+.SE_TABLE_RIGHT_DIV_HEADER_INNER table {
+  border-collapse: collapse;
+}
+.SE_TABLE_RIGHT_DIV_HEADER_INNER table td {
+  text-align:center;
+}
+
+.SE_TABLE_RIGHT_DIV_BODY {
+  width:100%; 
+  overflow:auto;
+}
+.SE_TABLE_RIGHT_DIV_BODY table{
+  border-collapse: collapse;
+}
+.SE_TABLE_RIGHT_DIV_BODY table td{
+  text-align:center;
+}
+
+.SE_TABLE_ATOMTABLE_DIV td{
+  border: 1px solid lightgray;
+}
+.SE_TABLE_ATOMTABLE_DIV th{
+  border: 1px solid lightgray;
+}
+.SE_TABLE_ATOMTABLE_DIV th div {
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  /*支持IE，chrome，FF不支持*/
+  word-break:break-all;
+  /*支持IE，chrome，FF*/ 
+  word-wrap:break-word;
+  overflow: hidden;
+}
+
+.SE_TABLE_ATOMTABLE_DIV td div {
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  /*支持IE，chrome，FF不支持*/
+  word-break:break-all;
+  /*支持IE，chrome，FF*/ 
+  word-wrap:break-word;
+  overflow: hidden;
+}
+
+.SE_TABLE_BG_WHITE{
+  background-color: white;
+}
+.SE_TABLE_BG_LIGHT{
+  background-color: #EEEEEE;
+}
+
+input.SE_TABLE_LEFT_CELL_INPUT {
+  width:95%;
+  height: 95%;
+  border: none;
+  background-color:transparent;
+  text-align: center;
+  color: white;
+}
+
+input.SE_TABLE_BODY_CELL_INPUT {
+  width:95%;
+  height: 95%;
+  border: none;
+  background-color:transparent;
+  text-align: right;
+}
+input.SE_TABLE_HEADER_CELL_INPUT {
+  width:70%;
+  height: 95%;
+  border: none;
+  background-color:transparent;
+  float: left;
+  text-align: center;
+  color: white;
+}
+input.SE_TABLE_HEADER_CELL_INPUT_FULL {
+  width: 100% !important;
+}
+
+.SE_TABLE_HEADER_CELL_SORT_DIV {
+  height:25px;
+  width:20% !important;
+  float: right;
+  text-align: right;
+}
+
+div.SE_TABLE_HEADER_CELL_SORT_DIV_UP{
+  width:0 !important; 
+  height:0 !important; 
+  border:6px solid; 
+  border-color:transparent transparent #FCFCFC transparent;
+  margin-top: 1px;
+  margin-bottom: 3px;
+}
+
+div.SE_TABLE_HEADER_CELL_SORT_DIV_DOWN {
+  width:0 !important; 
+  height:0 !important; 
+  border:6px solid; 
+  border-color:#FAFAFA transparent transparent transparent;
+  margin-top: 3px;
+  margin-bottom: 1px;
+}
+
+.SE_TABLE_INVISIBLE {
+  display: none;
+}
